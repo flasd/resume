@@ -4,8 +4,8 @@ import { Block } from 'baseui/block';
 
 export default function Header() {
   return (
-    <Block as="header" marginBottom="78px">
-      <Block marginBottom="16.5px">
+    <Block as="header" marginBottom="78px" display="block">
+      <Block marginBottom="32px">
         <Heading>
           <strong>Marcel</strong>
           <br />
