@@ -7,7 +7,6 @@ import {
   SectionText,
   SectionTitle,
 } from '../../Typography';
-import { Block } from 'baseui/block';
 
 export default function Experience() {
   return (
@@ -26,18 +25,18 @@ export default function Experience() {
 
         <Enumeration>
           <li>
-            Projects were organized in a FLUX architecture usign Redux as the
+            Projects were organized in a FLUX architecture using Redux as the
             source of truth and Redux-Saga and its generators pointing to a
             Spring Boot REST backend.
           </li>
           <li>
             Our biggest challenge was to keep the old UI working alongside the
             new implementation, since JSPs and React apps work in totally
-            diffrent ways.
+            different ways.
           </li>
           <li>
             We choose to use TypeScript for the component library for better
-            documentation prouposes and implemented components using the
+            documentation purposes and implemented components using the
             Override Pattern for flexibility.
           </li>
         </Enumeration>
@@ -49,7 +48,7 @@ export default function Experience() {
 
         <SectionText>
           I developed both the frontend, using React and Typescript, and the
-          backend, usign Firebase Cloud Functions and Hasura GraphQL. I also
+          backend, using Firebase Cloud Functions and Hasura GraphQL. I also
           implemented a school-focused live-video chat feature using NodeJS
           (with Socket.IO), Mediasoup and WebRTC.
         </SectionText>
@@ -60,7 +59,7 @@ export default function Experience() {
             Hooks. As our GraphQL client, we choose Apollo.
           </li>
           <li>
-            I helped plan and design most of the screens for the app (usign
+            I helped plan and design most of the screens for the app (using
             Figma) as we didn’t have any designers on our team.
           </li>
         </Enumeration>
@@ -74,14 +73,14 @@ export default function Experience() {
 
         <SectionText>
           I joined the project two sprints in and the code was very messy, using
-          jQuery patterns in a React app. I rewrote most of the code usign the
+          jQuery patterns in a React app. I rewrote most of the code using the
           FLUX architecture, with Redux Form for input management and Redux
           Thunk for side-effects.
         </SectionText>
 
         <Enumeration>
           <li>
-            We implemented Continues Integration & Delivery with Jenkins usign
+            We implemented Continues Integration & Delivery with Jenkins using
             Docker containers. It was the best deploy experience I ever had.
           </li>
         </Enumeration>
@@ -95,7 +94,7 @@ export default function Experience() {
 
         <SectionText>
           I developed both the Courses and Events modules for their native app
-          usign React Native. I also organized and implemented their Git into a
+          using React Native. I also organized and implemented their Git into a
           Feature Branch + Pull Requests workflow.
         </SectionText>
 

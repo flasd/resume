@@ -2,6 +2,10 @@ import styled from '@emotion/styled';
 
 export const PageContainer = styled.div`
   padding: 32px 0px;
+
+  @media screen and (max-width: 1250px) {
+    padding: 0px;
+  }
 `;
 
 export const LayoutBase = styled.div`

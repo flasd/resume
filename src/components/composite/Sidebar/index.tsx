@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   ItemContainer,
   LinkContainer,
   ProfilePicture,
   SidebarBase,
+  SidebarTriggerContainer,
 } from './styled';
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import {
+  FaEnvelope,
+  FaPhone,
+  FaGithub,
+  FaLinkedinIn,
+  FaBars,
+} from 'react-icons/fa';
 import marcel from '../../../assets/marcel.jpg';
 import {
   Link,
@@ -13,10 +20,18 @@ import {
   SidebarHeading,
   SidebarText,
 } from '../../Typography';
+import { Button } from 'baseui/button';
+import { useWindowSize } from '@react-hook/window-size';
 
 export default function Sidebar() {
+  const [windowWidth, windowHeight] = useWindowSize();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
-    <SidebarBase>
+    <SidebarBase sidebarOpen={sidebarOpen} windowHeight={windowHeight}>
+      <SidebarTriggerContainer onClick={() => setSidebarOpen((open) => !open)}>
+        <FaBars />
+      </SidebarTriggerContainer>
       <ProfilePicture src={marcel} />
 
       <section>
@@ -117,8 +132,7 @@ export default function Sidebar() {
         <ItemContainer>Listening to audio books</ItemContainer>
         <ItemContainer>Barbecuing and meeting new people</ItemContainer>
         <ItemContainer>Planning and productivity</ItemContainer>
-        <ItemContainer>Self-development and psycology</ItemContainer>
-        <ItemContainer>Drinving fast 🚗</ItemContainer>
+        <ItemContainer>Self-development and psychology</ItemContainer>
       </section>
 
       <section>
@@ -128,6 +142,26 @@ export default function Sidebar() {
           monthly visitors!! 🐧
         </ItemContainer>
       </section>
+
+      <Button
+        $as="a"
+        kind="secondary"
+        href="/resume.pdf"
+        overrides={{
+          Root: {
+            style: {
+              backgroundColor: 'transparent',
+              border: '1px solid #747474',
+              color: 'black',
+              width: '100%',
+              textAlign: 'center',
+              marginTop: windowWidth < 1023 ? '48px' : 'auto',
+            },
+          },
+        }}
+      >
+        Download PDF Version
+      </Button>
     </SidebarBase>
   );
 }

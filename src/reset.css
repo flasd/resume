@@ -142,11 +142,6 @@ q::after {
   content: none;
 }
 
-ul,
-li {
-  list-style: none;
-}
-
 sup {
   vertical-align: text-top;
 }

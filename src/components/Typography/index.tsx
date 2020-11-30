@@ -1,5 +1,16 @@
 import styled from '@emotion/styled';
-import ellipse from './ellipse.svg';
+
+const alginToCenterOnMobile = `
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+  }
+`;
+
+const justifyOnMobile = `
+  @media screen and (max-width: 1023px) {
+    text-align: justify;
+  }
+`;
 
 export const Heading = styled.h1`
   font-family: 'Lato';
@@ -11,6 +22,8 @@ export const Heading = styled.h1`
   text-align: left;
   text-transform: uppercase;
   color: #000000;
+
+  ${alginToCenterOnMobile}
 
   & > strong {
     font-family: 'Lato';
@@ -35,6 +48,8 @@ export const SubHeading = styled.h2`
   text-align: left;
   text-transform: uppercase;
   color: #000000;
+
+  ${alginToCenterOnMobile}
 `;
 
 export const Section = styled.section`
@@ -54,7 +69,7 @@ export const SectionTitle = styled.h3`
   padding-bottom: 12px;
   border-bottom: 1px solid #dfdfdf;
   margin-top: 48px;
-  margin-bottom: 12px;
+  margin-bottom: 32px;
 `;
 
 export const SectionHeading = styled.h4`
@@ -89,10 +104,12 @@ export const SectionText = styled.p`
   text-align: left;
   color: #4d4d4d;
   margin-bottom: 20px;
+
+  ${justifyOnMobile}
 `;
 
 export const Enumeration = styled.ul`
-  list-style: url('${ellipse}');
+  list-style: disc outside;
 
   & > li {
     font-family: Lato;
@@ -105,6 +122,12 @@ export const Enumeration = styled.ul`
     color: #4d4d4d;
     margin-left: 60px;
     margin-bottom: 8px;
+
+    ${justifyOnMobile}
+
+    @media screen and (max-width: 1023px) {
+      margin-left: 24px;
+    }
   }
 `;
 
@@ -112,12 +135,16 @@ export const Link = styled.a`
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em;
   text-align: left;
   color: #404040;
-  text-decoration: underline;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const SidebarHeading = styled.h5`
