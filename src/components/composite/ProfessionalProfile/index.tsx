@@ -7,9 +7,9 @@ export default function ProfessionalProfile() {
       <SectionTitle>Professional profile</SectionTitle>
       <SectionText>
         Hey! My name is Marcel Coelho, I'm a software engineer from Brazil, with
-        6+ years of experience with JavaScript, currently working with React and
-        Typescript at Appen outsourced by Novatics and looking for an
-        opportunity to be part of a product/startup team.
+        5 years of experience with JavaScript, currently working with React and
+        Typescript and looking for an opportunity to be part of a
+        product/startup team.
       </SectionText>
 
       <SectionText>
