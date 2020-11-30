@@ -21,10 +21,10 @@ import {
   SidebarText,
 } from '../../Typography';
 import { Button } from 'baseui/button';
-import { useWindowSize } from '@react-hook/window-size';
+import { useWindowHeight } from '@react-hook/window-size';
 
 export default function Sidebar() {
-  const [windowWidth, windowHeight] = useWindowSize();
+  const windowHeight = useWindowHeight();
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -147,6 +147,7 @@ export default function Sidebar() {
         $as="a"
         kind="secondary"
         href="/resume.pdf"
+        target="_blank"
         overrides={{
           Root: {
             style: {
@@ -155,7 +156,7 @@ export default function Sidebar() {
               color: 'black',
               width: '100%',
               textAlign: 'center',
-              marginTop: windowWidth < 1023 ? '48px' : 'auto',
+              marginTop: '48px',
             },
           },
         }}

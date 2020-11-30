@@ -32,14 +32,14 @@ export const ReferenceName = styled.h5`
   text-align: left;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 `;
 
 export const ReferenceRelationship = styled.p`
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.04em;
   text-align: left;
@@ -51,7 +51,7 @@ export const ReferenceCompany = styled.a`
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.04em;
   text-align: left;
