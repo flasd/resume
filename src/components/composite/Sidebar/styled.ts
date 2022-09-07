@@ -6,15 +6,13 @@ interface SidebarBaseProps {
 }
 
 export const SidebarBase = styled.aside<SidebarBaseProps>`
-  border: 1px solid #747474;
   box-sizing: border-box;
   padding: 48px;
-  margin-left: 64px;
-  /* width: 740px; */
+  width: 340px;
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 768px) {
     border: none;
     position: fixed;
     top: 0px;
@@ -37,7 +35,7 @@ export const SidebarTriggerContainer = styled.button`
   border-bottom-left-radius: 8px;
   background-color: white;
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 768px) {
     display: block;
   }
 `;
@@ -56,7 +54,6 @@ export const LinkContainer = styled.div`
   & > a {
     display: inline-block;
     margin-left: 16px;
-    flex: 1;
   }
 `;
 
@@ -64,6 +61,7 @@ export const ProfilePicture = styled.img`
   display: block;
   width: 180px;
   margin: 0 auto 64px;
+  border-radius: 8px
 `;
 
 export const ItemContainer = styled.div`

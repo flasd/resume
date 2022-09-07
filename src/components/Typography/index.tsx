@@ -12,6 +12,20 @@ const justifyOnMobile = `
   }
 `;
 
+// fadeIn animation
+const fadeIn = `
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+
+  }
+`;
+
 export const Heading = styled.h1`
   font-family: 'Lato';
   font-size: 57px;
@@ -95,6 +109,8 @@ export const SectionSubHeading = styled.h5`
 `;
 
 export const SectionText = styled.p`
+  ${fadeIn}
+
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
@@ -104,6 +120,8 @@ export const SectionText = styled.p`
   text-align: left;
   color: #4d4d4d;
   margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 225ms ease-in-out forwards;
 
   ${justifyOnMobile}
 `;
@@ -141,9 +159,23 @@ export const Link = styled.a`
   text-align: left;
   color: #404040;
   text-decoration: none;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    display: block;
+    /* simulate a underline */
+    width: 100%;
+    height: 1px;
+    margin-top: -2px;
+    background: #ddd;
+    transition: all 0.15s ease;
+  }
 
   &:hover {
-    text-decoration: underline;
+    &::after {
+      background: #000;
+    }
   }
 `;
 

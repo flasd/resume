@@ -6,13 +6,7 @@ import {
   SidebarBase,
   SidebarTriggerContainer,
 } from './styled';
-import {
-  FaEnvelope,
-  FaPhone,
-  FaGithub,
-  FaLinkedinIn,
-  FaBars,
-} from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaBars } from 'react-icons/fa';
 import marcel from '../../../assets/marcel.jpg';
 import {
   Link,
@@ -20,7 +14,7 @@ import {
   SidebarHeading,
   SidebarText,
 } from '../../Typography';
-import { Button } from 'baseui/button';
+// import { Button } from 'baseui/button';
 import { useWindowHeight } from '@react-hook/window-size';
 
 export default function Sidebar() {
@@ -46,7 +40,7 @@ export default function Sidebar() {
           </Link>
         </LinkContainer>
 
-        <LinkContainer>
+        {/* <LinkContainer>
           <FaPhone />
           <Link
             target="_blank"
@@ -55,7 +49,7 @@ export default function Sidebar() {
           >
             +55 61 9 9935-4900
           </Link>
-        </LinkContainer>
+        </LinkContainer> */}
 
         <LinkContainer>
           <FaGithub />
@@ -83,18 +77,19 @@ export default function Sidebar() {
       <section>
         <SectionTitle>Skills</SectionTitle>
         <ItemContainer>Advanced JavaScript</ItemContainer>
-        <ItemContainer>TypeScript</ItemContainer>
-        <ItemContainer>Git</ItemContainer>
         <ItemContainer>Advanced React</ItemContainer>
+        <ItemContainer>TypeScript</ItemContainer>
         <ItemContainer>Styled Components</ItemContainer>
+        <ItemContainer>NodeJs</ItemContainer>
+        <ItemContainer>Express</ItemContainer>
         <ItemContainer>Jest</ItemContainer>
-        <ItemContainer>Cypress</ItemContainer>
       </section>
 
       <section>
-        <SectionTitle>Edutaction</SectionTitle>
+        <SectionTitle>Education</SectionTitle>
         <ItemContainer>
-          <SidebarHeading>Computed engineering</SidebarHeading>
+          <SidebarText>Bachelor</SidebarText>
+          <SidebarHeading>Computer engineering</SidebarHeading>
           <SidebarText>Universidade de Brasilia, Brazil</SidebarText>
           2017 - 2019
         </ItemContainer>
@@ -129,7 +124,7 @@ export default function Sidebar() {
 
       <section>
         <SectionTitle>Other interests</SectionTitle>
-        <ItemContainer>Listening to audio books</ItemContainer>
+        <ItemContainer>Listening to audiobooks</ItemContainer>
         <ItemContainer>Barbecuing and meeting new people</ItemContainer>
         <ItemContainer>Planning and productivity</ItemContainer>
         <ItemContainer>Self-development and psychology</ItemContainer>
@@ -143,7 +138,7 @@ export default function Sidebar() {
         </ItemContainer>
       </section>
 
-      <Button
+      {/* <Button
         $as="a"
         kind="secondary"
         href="/resume.pdf"
@@ -162,7 +157,7 @@ export default function Sidebar() {
         }}
       >
         Download PDF Version
-      </Button>
+      </Button> */}
     </SidebarBase>
   );
 }

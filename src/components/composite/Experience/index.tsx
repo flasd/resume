@@ -14,8 +14,42 @@ export default function Experience() {
       <SectionTitle>Experience</SectionTitle>
 
       <Section>
-        <SectionHeading>Senior Frontend Engineer</SectionHeading>
-        <SectionSubHeading>Novatics (Appen) / Jan 2020 - Now</SectionSubHeading>
+        <SectionHeading>Senior Fullstack Engineer</SectionHeading>
+        <SectionSubHeading>ContentFly / Mar 2021 - Now</SectionSubHeading>
+
+        <SectionText>
+          Built the first AI-powered content generation tool, integrating their
+          AngularJs, Webpack, and Stylus frontend, their NodeJs, Express, and
+          Sequelize backend with GPT-3 providing state-of-the-art content
+          generation tools.
+        </SectionText>
+
+        <Enumeration>
+          <li>
+            Engineered and tested prompts that would bring the best results from
+            GPT-3, allowing the company to offer ideas, titles, and content
+            draft generation.
+          </li>
+          <li>
+            Integrated the platform with PaymentRails, using their SDK and Jest
+            to unit test the integration, allowing crowd payouts at scale which
+            gave the company the posibility to scale the number of writers on
+            the platform and catch over 10k USD in fraud.
+          </li>
+          <li>
+            Rewrote a 4-year-old AngularJs app into VueJs, allowing the app to
+            take advantage of code splitting and giving developers a better Dx.
+          </li>
+        </Enumeration>
+        <SectionText>
+          <br />
+          <strong>Skills:</strong> AngularJs, Vue 3, NodeJs, Express, Sequelize,
+          Jest.
+        </SectionText>
+      </Section>
+      <Section>
+        <SectionHeading>Senior React Frontend Engineer</SectionHeading>
+        <SectionSubHeading>Novatics (Appen) / Jan 2020 - Mar 2021</SectionSubHeading>
 
         <SectionText>
           I developed the project architecture now used in most new Appen
@@ -36,14 +70,14 @@ export default function Experience() {
           </li>
           <li>
             We choose to use TypeScript for the component library for better
-            documentation purposes and implemented components using the
-            Override Pattern for flexibility.
+            documentation purposes and implemented components using the Override
+            Pattern for flexibility.
           </li>
         </Enumeration>
       </Section>
 
       <Section>
-        <SectionHeading>Senior Frontend Engineer</SectionHeading>
+        <SectionHeading>React Frontend Engineer</SectionHeading>
         <SectionSubHeading>Escolare / Fev 2020 - Oct 2020</SectionSubHeading>
 
         <SectionText>
@@ -66,7 +100,7 @@ export default function Experience() {
       </Section>
 
       <Section>
-        <SectionHeading>Frontend Engineer</SectionHeading>
+        <SectionHeading>React Frontend Engineer</SectionHeading>
         <SectionSubHeading>
           CooperSystem (IPEA) / Aug 2018 - Jan 2020
         </SectionSubHeading>
@@ -75,19 +109,19 @@ export default function Experience() {
           I joined the project two sprints in and the code was very messy, using
           jQuery patterns in a React app. I rewrote most of the code using the
           FLUX architecture, with Redux Form for input management and Redux
-          Thunk for side-effects.
+          Thunk for side effects.
         </SectionText>
 
         <Enumeration>
           <li>
             We implemented Continues Integration & Delivery with Jenkins using
-            Docker containers. It was the best deploy experience I ever had.
+            Docker containers. It was the best deployment experience I ever had.
           </li>
         </Enumeration>
       </Section>
 
       <Section>
-        <SectionHeading>Frontend Engineer</SectionHeading>
+        <SectionHeading>React Native Engineer</SectionHeading>
         <SectionSubHeading>
           Connect (Sebrae) / Oct 2019 - Jan 2020
         </SectionSubHeading>

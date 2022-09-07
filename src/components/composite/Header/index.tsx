@@ -13,7 +13,7 @@ export default function Header() {
         </Heading>
       </Block>
       <SubHeading>
-        Senior <strong>JavaScript</strong> Engineer
+        Senior <strong>Fullstack JavaScript</strong> Engineer
       </SubHeading>
     </Block>
   );

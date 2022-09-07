@@ -1,5 +1,12 @@
 import React from 'react';
-import { LayoutBase, PageContainer } from './styled';
+import Sidebar from '../composite/Sidebar';
+import {
+  ContentContainer,
+  ContentWrapper,
+  PageContainer,
+  SidebarContainer,
+  SidebarWrapper,
+} from './styled';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -10,7 +17,14 @@ export default function Layout(props: LayoutProps) {
 
   return (
     <PageContainer>
-      <LayoutBase>{children}</LayoutBase>
+      <ContentWrapper>
+        <ContentContainer>{children}</ContentContainer>
+      </ContentWrapper>
+      <SidebarWrapper>
+        <SidebarContainer>
+          <Sidebar />
+        </SidebarContainer>
+      </SidebarWrapper>
     </PageContainer>
   );
 }

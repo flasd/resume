@@ -13,6 +13,18 @@
     />
     <title>Marcel Coelho's Resume</title>
 
+    <!-- intercept all createElements with iframe -->
+    <script>
+      const createElement = document.createElement;
+      document.createElement = function (tag) {
+        if (tag === "iframe") {
+          return null;
+        }
+        return createElement.call(document, tag);
+      };
+    </script>
+
+    <!-- 
     <script type="text/javascript">
       (window.heap = window.heap || []),
         (heap.load = function (e, t) {
@@ -49,7 +61,7 @@
             heap[p[o]] = n(p[o]);
         });
       heap.load('564784379');
-    </script>
+    </script> -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
