@@ -101,7 +101,7 @@ export const SectionSubHeading = styled.h5`
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.06em;
   text-align: left;
@@ -115,10 +115,10 @@ export const SectionText = styled.p`
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 28px;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #4d4d4d;
+  color: #2a2a2a;
   margin-bottom: 20px;
   opacity: 0;
   animation: fadeIn 225ms ease-in-out forwards;
@@ -134,10 +134,10 @@ export const Enumeration = styled.ul`
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: #4d4d4d;
+    color: #2a2a2a;
     margin-left: 60px;
     margin-bottom: 8px;
 

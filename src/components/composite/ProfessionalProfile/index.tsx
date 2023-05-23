@@ -12,13 +12,13 @@ export default function ProfessionalProfile() {
   return (
     <>
       <SectionTitle>Professional profile</SectionTitle>
-      <SectionText>Welcome dear Recruiter,</SectionText>
+      <SectionText>Welcome!</SectionText>
 
       <SectionText>
         I'm a Software Engineer with over{' '}
-        <strong>6 years of experience with JavaScript</strong>, currently
+        <strong>8 years of experience with JavaScript</strong>, currently
         working with <strong>React and Typescript</strong>, and looking for an
-        opportunity to be part of a bigger company with awesome culture.
+        opportunity to be part of a smaller company with awesome culture.
       </SectionText>
 
       {!readMore && (

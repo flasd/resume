@@ -14,12 +14,17 @@ import {
   SidebarHeading,
   SidebarText,
 } from '../../Typography';
-// import { Button } from 'baseui/button';
+import { Button } from 'baseui/button';
 import { useWindowHeight } from '@react-hook/window-size';
 
 export default function Sidebar() {
   const windowHeight = useWindowHeight();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const handlePrint = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    window.print();
+  };
 
   return (
     <SidebarBase sidebarOpen={sidebarOpen} windowHeight={windowHeight}>
@@ -34,9 +39,9 @@ export default function Sidebar() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="mailto:sayhello@devmarcel.com"
+            href="mailto:flasd2@gmail.com"
           >
-            sayhello@devmarcel.com
+            flasd2@gmail.com
           </Link>
         </LinkContainer>
 
@@ -77,11 +82,11 @@ export default function Sidebar() {
       <section>
         <SectionTitle>Skills</SectionTitle>
         <ItemContainer>Advanced JavaScript</ItemContainer>
-        <ItemContainer>Advanced React</ItemContainer>
-        <ItemContainer>TypeScript</ItemContainer>
-        <ItemContainer>Styled Components</ItemContainer>
+        <ItemContainer>Advanced TypeScript</ItemContainer>
+        <ItemContainer>React</ItemContainer>
         <ItemContainer>NodeJs</ItemContainer>
         <ItemContainer>Express</ItemContainer>
+        <ItemContainer>GraphQL</ItemContainer>
         <ItemContainer>Jest</ItemContainer>
       </section>
 
@@ -138,11 +143,10 @@ export default function Sidebar() {
         </ItemContainer>
       </section>
 
-      {/* <Button
-        $as="a"
+      <Button
+        onClick={handlePrint}
         kind="secondary"
-        href="/resume.pdf"
-        target="_blank"
+        href="#"
         overrides={{
           Root: {
             style: {
@@ -157,7 +161,7 @@ export default function Sidebar() {
         }}
       >
         Download PDF Version
-      </Button> */}
+      </Button>
     </SidebarBase>
   );
 }
