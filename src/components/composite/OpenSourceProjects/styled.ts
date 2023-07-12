@@ -15,7 +15,7 @@ export const OpenSourceProjectContainer = styled.div`
 `;
 
 export const IconContainer = styled.div`
-  margin-right: 24px;
+  margin-right: 16px;
 `;
 
 export const InformationContainer = styled.div`
@@ -33,6 +33,8 @@ export const ProjectName = styled.h5`
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
 `;
 
 export const ProjectDescription = styled.p`
@@ -48,13 +50,13 @@ export const ProjectDescription = styled.p`
 
 export const ProjectText = styled.p`
   font-family: Lato;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 18px;
   letter-spacing: 0.04em;
   text-align: left;
-  color: #404040;
+  color: #222222;
   margin-top: 4px;
 `;
 

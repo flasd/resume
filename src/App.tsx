@@ -6,7 +6,6 @@ import Layout from './components/Layout';
 import Header from './components/composite/Header';
 import ProfessionalProfile from './components/composite/ProfessionalProfile';
 import Experience from './components/composite/Experience';
-import OpenSourceProjects from './components/composite/OpenSourceProjects';
 
 const engine = new Styletron();
 
@@ -19,7 +18,6 @@ function App() {
           <main>
             <ProfessionalProfile />
             <Experience />
-            <OpenSourceProjects />
           </main>
         </Layout>
       </BaseProvider>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, SubHeading } from '../../Typography';
+import { Heading, Link, SubHeading, SubHeadingSmall } from '../../Typography';
 import { Block } from 'baseui/block';
 
 export default function Header() {
@@ -15,6 +15,25 @@ export default function Header() {
       <SubHeading>
         Senior <strong>Fullstack JavaScript</strong> Engineer
       </SubHeading>
+      <SubHeadingSmall style={{ marginTop: 4 }}>
+        5+ years of experience | Typescript & React Expert | Currently at{' '}
+        <Link
+          href="https://opensea.io"
+          style={{
+            fontSize: 'inherit',
+          }}
+        >
+          Opensea
+        </Link>{' '}
+        <Link
+          href="https://www.ycombinator.com/companies/opensea"
+          style={{
+            fontSize: 'inherit',
+          }}
+        >
+          (YC W18)
+        </Link>
+      </SubHeadingSmall>
     </Block>
   );
 }

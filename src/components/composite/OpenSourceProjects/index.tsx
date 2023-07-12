@@ -18,11 +18,13 @@ export default function OpenSourceProjects() {
       <SectionTitle>Open Source Projects</SectionTitle>
       <OpenSourceContainer>
         <OpenSourceProjectContainer>
-          <IconContainer>
-            <FaNpm />
-          </IconContainer>
           <InformationContainer>
-            <ProjectName>CPFCheck</ProjectName>
+            <ProjectName>
+              <IconContainer>
+                <FaNpm />
+              </IconContainer>
+              CPFCheck
+            </ProjectName>
             <ProjectDescription>Brazilian ID validation</ProjectDescription>
             <ProjectLink
               href="https://www.npmjs.com/package/cpf-check"
@@ -43,11 +45,13 @@ export default function OpenSourceProjects() {
           </InformationContainer>
         </OpenSourceProjectContainer>
         <OpenSourceProjectContainer>
-          <IconContainer>
-            <FaNpm />
-          </IconContainer>
           <InformationContainer>
-            <ProjectName>Strip Invariant</ProjectName>
+            <ProjectName>
+              <IconContainer>
+                <FaNpm />
+              </IconContainer>
+              Strip Invariant
+            </ProjectName>
             <ProjectDescription>Babel plugin</ProjectDescription>
             <ProjectLink
               href="https://www.npmjs.com/package/babel-plugin-strip-invariant"
@@ -68,11 +72,13 @@ export default function OpenSourceProjects() {
           </InformationContainer>
         </OpenSourceProjectContainer>
         <OpenSourceProjectContainer>
-          <IconContainer>
-            <FaNpm />
-          </IconContainer>
           <InformationContainer>
-            <ProjectName>Express Yup middleware</ProjectName>
+            <ProjectName>
+              <IconContainer>
+                <FaNpm />
+              </IconContainer>
+              Express Yup middleware
+            </ProjectName>
             <ProjectDescription>
               Schema validation for Express
             </ProjectDescription>
@@ -93,11 +99,13 @@ export default function OpenSourceProjects() {
           </InformationContainer>
         </OpenSourceProjectContainer>
         <OpenSourceProjectContainer>
-          <IconContainer>
-            <FaGithub />
-          </IconContainer>
           <InformationContainer>
-            <ProjectName>Fireplate</ProjectName>
+            <ProjectName>
+              <IconContainer>
+                <FaGithub />
+              </IconContainer>
+              Fireplate
+            </ProjectName>
             <ProjectDescription>
               React boilerplate for Firebase
             </ProjectDescription>

@@ -66,6 +66,17 @@ export const SubHeading = styled.h2`
   ${alginToCenterOnMobile}
 `;
 
+export const SubHeadingSmall = styled.h3`
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2em;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #000000;
+`;
+
 export const Section = styled.section`
   margin-bottom: 48px;
 `;

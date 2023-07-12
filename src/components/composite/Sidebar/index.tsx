@@ -16,6 +16,7 @@ import {
 } from '../../Typography';
 import { Button } from 'baseui/button';
 import { useWindowHeight } from '@react-hook/window-size';
+import OpenSourceProjects from '../OpenSourceProjects';
 
 export default function Sidebar() {
   const windowHeight = useWindowHeight();
@@ -39,9 +40,9 @@ export default function Sidebar() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="mailto:flasd2@gmail.com"
+            href="mailto:hello@marcelcoelho.com"
           >
-            flasd2@gmail.com
+            hello@marcelcoelho.com
           </Link>
         </LinkContainer>
 
@@ -81,12 +82,12 @@ export default function Sidebar() {
 
       <section>
         <SectionTitle>Skills</SectionTitle>
-        <ItemContainer>Advanced JavaScript</ItemContainer>
-        <ItemContainer>Advanced TypeScript</ItemContainer>
-        <ItemContainer>React</ItemContainer>
+        <ItemContainer $bold>JavaScript</ItemContainer>
+        <ItemContainer $bold>TypeScript</ItemContainer>
+        <ItemContainer $bold>React</ItemContainer>
+        <ItemContainer>GraphQL</ItemContainer>
         <ItemContainer>NodeJs</ItemContainer>
         <ItemContainer>Express</ItemContainer>
-        <ItemContainer>GraphQL</ItemContainer>
         <ItemContainer>Jest</ItemContainer>
       </section>
 
@@ -114,34 +115,7 @@ export default function Sidebar() {
         </ItemContainer>
       </section>
 
-      <section>
-        <SectionTitle>Soft Skills</SectionTitle>
-        <ItemContainer>Great written communication</ItemContainer>
-        <ItemContainer>Prioritizing</ItemContainer>
-        <ItemContainer>Open-mindedness</ItemContainer>
-        <ItemContainer>Decision making</ItemContainer>
-        <ItemContainer>Reframing</ItemContainer>
-        <ItemContainer>Integrity</ItemContainer>
-        <ItemContainer>Self-motivated</ItemContainer>
-        <ItemContainer>Empathy</ItemContainer>
-        <ItemContainer>Versatility</ItemContainer>
-      </section>
-
-      <section>
-        <SectionTitle>Other interests</SectionTitle>
-        <ItemContainer>Listening to audiobooks</ItemContainer>
-        <ItemContainer>Barbecuing and meeting new people</ItemContainer>
-        <ItemContainer>Planning and productivity</ItemContainer>
-        <ItemContainer>Self-development and psychology</ItemContainer>
-      </section>
-
-      <section>
-        <SectionTitle>Interesting Fact</SectionTitle>
-        <ItemContainer>
-          When I was 12 years old I had a Club Penguin blog with over 20K unique
-          monthly visitors!! 🐧
-        </ItemContainer>
-      </section>
+      <OpenSourceProjects />
 
       <Button
         onClick={handlePrint}
@@ -155,7 +129,6 @@ export default function Sidebar() {
               color: 'black',
               width: '100%',
               textAlign: 'center',
-              marginTop: '48px',
             },
           },
         }}

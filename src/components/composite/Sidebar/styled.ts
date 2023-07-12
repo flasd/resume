@@ -22,6 +22,12 @@ export const SidebarBase = styled.aside<SidebarBaseProps>`
     background-color: white;
     height: ${(props) => `${props.windowHeight}px`};
   }
+
+  & button {
+    @media print {
+      display: none;
+    }
+  }
 `;
 
 export const SidebarTriggerContainer = styled.button`
@@ -43,7 +49,7 @@ export const SidebarTriggerContainer = styled.button`
 export const LinkContainer = styled.div`
   display: flex;
   flex-direction: row;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 
   & > svg {
     position: relative;
@@ -60,10 +66,13 @@ export const LinkContainer = styled.div`
 export const ProfilePicture = styled.img`
   display: block;
   width: 180px;
-  margin: 0 auto 64px;
-  border-radius: 8px
+  margin: 0 0 64px;
+  border-radius: 4px;
 `;
 
-export const ItemContainer = styled.div`
+export const ItemContainer = styled.div<{
+  $bold?: boolean;
+}>`
   margin-bottom: 14px;
+  font-weight: ${(props) => (props.$bold ? '600' : '400')};
 `;

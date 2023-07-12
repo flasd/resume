@@ -23,43 +23,45 @@ export default function Experience() {
 
       <Section>
         <SectionHeading>Senior Fullstack Engineer</SectionHeading>
-        <SectionSubHeading>Opensea / Oct 2022 - Now</SectionSubHeading>
+        <SectionSubHeading>Opensea / Oct 2022 - Prsent</SectionSubHeading>
 
         <SectionText>
-          At OpenSea I've concentrated on optimizing the performance of their
-          Django GraphQL and Next.js application. This involved a significant
-          reduction of the page sizes by over 4 times and a 3-second decrease in
-          the initial page load time!
+          At OpenSea, my primary responsibilities revolve around enhancing user
+          experience and interactions in our Next.js applications. I also
+          contribute to the development of{' '}
+          <Link href="https://www.npmjs.com/package/@opensea/vessel">
+            Vessel
+          </Link>
+          , a iframe-to-iframe communication library that allowed us to
+          communicate between securely between our main app and our wallet.
         </SectionText>
 
         <Enumeration>
           <li>
-            I've utilized caching techniques and intelligent data loading in
-            GraphQL, which improved the efficiency of API requests by over 20%,
-            reducing the backend load and significantly enhancing the overall
-            system performance.
+            I took a leading role in the UI development for our newly launched
+            OpenSea Wallet. With the application of Typescript and Tailwind, a
+            fully functional, responsive, and easy-to-navigate interface was
+            brought to life, offering users a seamless interaction with the
+            platform.
           </li>
           <li>
-            Successfully migrated some of OpenSea's Next.js pages from
-            Server-Side Rendering (SSR) to Incremental Static Regeneration
-            (ISR), which substantially improved the application's performance
-            and scalability. The transition enabled more efficient handling of
-            traffic spikes and greatly helped to address the effects of DDOS
-            attacks.
+            Led the optimization initiative for our Next.js application,
+            reducing page sizes by over 4x and improving the initial page load
+            time by 3 seconds. This enhanced our platform's responsiveness and
+            interactivity.
           </li>
           <li>
-            Integrated LD (Linked Data) schema into the application, which
-            improved data interconnectivity and enhanced SEO performance. This
-            implementation, specifically targeted towards Google Shopping, led
-            to a significant increase in organic traffic from search engine
-            results, boosting product visibility and contributing to increased
-            transaction numbers.
+            Successfully transitioned selected Next.js pages from Server-Side
+            Rendering (SSR) to Incremental Static Regeneration (ISR), augmenting
+            the application's performance and scalability. This proactive shift
+            helped in handling high-traffic scenarios, particularly during peak
+            user activity periods.
           </li>
         </Enumeration>
         <SectionText>
           <br />
-          <strong>Skills:</strong> Django, GraphQL, Next.js, TypeScript,
-          JavaScript, React, Performance Optimization.
+          <strong>Highlights:</strong> Next.js, TypeScript, React, Tailwind,
+          GraphQL
         </SectionText>
       </Section>
       <Section>
@@ -92,8 +94,8 @@ export default function Experience() {
         </Enumeration>
         <SectionText>
           <br />
-          <strong>Skills:</strong> AngularJs, Vue 3, NodeJs, Express, Sequelize,
-          Jest.
+          <strong>Highlights:</strong> AngularJs, Vue 3, NodeJs, Express,
+          Sequelize, Jest.
         </SectionText>
       </Section>
       <Section>
